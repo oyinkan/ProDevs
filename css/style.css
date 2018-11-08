@@ -384,7 +384,8 @@ hr.footer-line {
   color: #212B36;
 }
 .select-div {
-  margin-left: -70px;
+  /*margin-left: -70px;*/
+  margin-left: -20px;
   padding-bottom: 70px;
 }
 .environment-box {
@@ -484,7 +485,7 @@ a p.environment-text {
     width: 40%;
   }
   .select-div {
-    margin-left: 0;
+    margin-left: 7px;
   }
   .devdashboard-div .nav-tabs .nav-link {
     width: 92px;
@@ -492,11 +493,17 @@ a p.environment-text {
   .chaticon-div {
     top: 94%;
   }
+  .apikey {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .pro {
     display: none;
+  }
+  #profilerow {
+    margin-top: 10px;
   }
 }
 
@@ -507,6 +514,7 @@ a p.environment-text {
 }
 @media screen and (min-width: 1100px)and (max-width: 1280px) {
   .select-div {
-    margin-left: -35px;
+    /*margin-left: -35px;*/
+    margin-left: 20px;
   }
 }
