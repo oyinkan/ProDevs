@@ -1345,12 +1345,12 @@ pre code
 
         flex: 0 0 8.33333%;
     }
-    /*.col-md-2
+    .col-md-2
     {
         max-width: 16.66667%; 
 
         flex: 0 0 16.66667%;
-    }*/
+    }
     .col-md-3
     {
         max-width: 25%; 

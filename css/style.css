@@ -452,6 +452,167 @@ a p.environment-text {
   margin-bottom: 20px;
 }
 
+/* client dashboard */
+.profile-text.white {
+  color: #fff;
+}
+.clientdashboard-logo {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 16px;
+  color: #fff;
+}
+.clientdashboard-logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.talentsearch-div {
+  background: #FFFFFF;
+  border: 0.2px solid #9B9B9B;
+  padding: 15px 0 0px 18px;
+}
+.talentsearch-div p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #979797;
+}
+.filter-div {
+  padding: 15px 0 0 18px;
+}
+.filter-div p {
+  line-height: 20px;
+  font-size: 14px;
+  color: #626262;
+}
+.filter-div .form-control {
+  /*border: 0.3px solid #626262;*/
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 3px;
+}
+#filter {
+  font-size: 18px;
+}
+#search-filter {
+  border: 0.3px solid #626262;
+  font-size: 14px;
+  width: 100%;
+  font-weight: normal;
+  padding: 10px 0;
+}
+.searchfilter-line {
+  margin-top: 40px;
+  margin-right: -30px;
+  margin-left: -35px;
+}
+.filter-column {
+  background: #fff;
+  margin-left: -17px;
+  margin-top: -14px;
+}
+.filterdiv {
+  padding: 15px 15px 15px 20px;
+}
+.profilecard-div {
+  margin-top: 10px;
+}
+.profilecard-div a:hover {
+  text-decoration: none;
+}
+.profilecard-div .card-header {
+  padding: 0;
+  border-radius: 5px 5px 0px 0px;
+}
+.profilecard-div .developername {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+.profilecard-div .developerdetails {
+  line-height: 20px;
+  font-size: 14px;
+  color: #979797;
+}
+.developerline {
+  border: 0.5px solid #9B9B9B;
+}
+p.developerinterest {
+  color: #626262;
+}
+.profilecard-row {
+  padding: 10px 0 150px 20px;
+}
+/* clients dashboard two*/
+.profile-back {
+  font-size: 14px;
+  color: #373E42;
+}
+.profileback {
+  color: rgba(55, 62, 66, 0.5);
+}
+.profiledetailsdiv {
+  background: #FFFFFF;
+  border: 0.2px solid #9B9B9B;
+  border-radius: 5px;
+  padding: 15px;
+}
+p.profiledetails-name {
+  font-weight: 600;
+  line-height: 31px;
+  font-size: 27px;
+  color: #000;
+}
+p.profiledetails-age {
+  line-height: 33px;
+  font-size: 21px;
+}
+.hours-spent {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 21px;
+  color: #212B36;
+}
+.hoursspent-div {
+  background: #FFFFFF;
+  border: 0.5px solid #DADADA;
+  border-radius: 3px;
+}
+.hoursspentdiv {
+  position: relative;
+  padding: 0 0 0 20px;
+  top: 45px;
+  margin-top: -20px;
+}
+p.hoursspent-hour {
+  font-size: 27px;
+  color: #626262;
+}
+p.performance {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  font-size: 9px;
+  color: #000;
+}
+span.perfpercentage {
+  font-size: 11.55px;
+  color: #24CCB8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -496,6 +657,16 @@ a p.environment-text {
   .apikey {
     margin-left: 20px;
   }
+  .filter-div {
+    padding: 0;
+  }
+  .filter-column {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .profilecard-row {
+    padding: 10px 0 150px 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -516,5 +687,22 @@ a p.environment-text {
   .select-div {
     /*margin-left: -35px;*/
     margin-left: 20px;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 960px) {
+  /*#profilecardcol-3,
+  #profilecardcol-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }*/
+  .profilecard-row {
+    padding: 10px 0 150px 0;
+  }
+  .filter-div {
+    padding: 0;
+  }
+  .filter-column {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
