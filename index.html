@@ -21,7 +21,7 @@
 
 <body>
   <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom" style="background: transparent;">
       <div class="container-fluid" id="main-header">
         <a class="navbar-brand mr-lg-5" href="index.html">
           <img src="images/logo.png" class="img-fluid" alt="logo">
@@ -46,27 +46,22 @@
             </div>
           </div>
           <ul class="navbar-nav navbar-nav-hover ml-lg-auto">
-            <li class="nav-item dropdown">
-              <a href="solution.html" class="nav-link" role="button">
-                <span class="nav-link-inner--text">Solutions</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a href="about.html" class="nav-link" role="button">
                 <span class="nav-link-inner--text">About us</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a href="pricing.html" class="nav-link" role="button">
                 <span class="nav-link-inner--text">Pricing</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a href="login.html" class="nav-link" role="button">
                 <span class="nav-link-inner--text">Login</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a href="signup.html" target="_blank" class="btn btn-neutral btn-icon signup">
                 <span class="nav-link-inner--text">Sign up</span>
               </a>
@@ -76,17 +71,48 @@
       </div>
     </nav>
     <div id="header-background">
-      <div class="text-center" id="getitdone-div">
-        <h2>Get it done with a pro designer or developer.</h2>
-        <p>ProDevs is a platform that helps companies or clients find designers or developers around Africa.</p>
+      <div class="jumbotron" style="padding: 1rem 1rem; background-color: transparent;">
+        <div class="row">
+          <div class="col-lg-6 col-md-6" style="background: #fff; color: #000;">
+            <div id="getitdone-div">
+              <h2>Get it done with a pro designer or developer.</h2>
+              <p>ProDevs is a platform that meets the needs of both clients and developers, we are building an ecosystem of trust for both parties.</p>
+              <img src="images/header-dot.png" class="img-fluid" alt="" style="margin-top: 20px;">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6" style="padding-right: 0; padding-left: 0;">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/back.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/back.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/back.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="search-div" class="container-fluid">
-      <form>
+    <div class="container-fluid" style="width: 85.5%;">
+      <p id="searchfor">Search for talents at a go ...</p>
+      <hr class="searchfor-line">
+      <form style="clear: left;" id="search-div">
         <div class="row">
           <div class="col-lg-10 col-md-10">
             <div class="row">
-              <div class="col-lg-4 col-md-4 search">
+              <div class="col-lg-4 col-md-4">
                 <div>
                   <p>LOOKING FOR</p>
                   <div class="form-group">
@@ -94,7 +120,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 search">
+              <div class="col-lg-4 col-md-4">
                 <div>
                   <p>AVAILABILITY</p>
                   <div class="form-group">
@@ -107,8 +133,8 @@
                   <p>SKILL LEVEL</p>
                   <div class="form-group">
                     <select class="form-control" id="" placeholder="Level “e.g intermediate”">
-                      <option></option>
-                      <option></option>
+                      <option value="">Level “e.g intermediate”</option>
+                      <option>Beginner</option>
                       <option></option>
                       <option></option>
                     </select> 
@@ -119,13 +145,15 @@
           </div>
           <div class="col-lg-2 col-md-2">
             <div>
-              <button class="btn btn-info btn-icon signup" id="search"><i class="fa fa-search" id="search-icon"></i> SEARCH</button>
+              <button class="btn btn-info btn-icon signup" id="search"><i class="fa fa-search" id="search-icon"></i> &nbsp;SEARCH</button>
             </div>
           </div>
         </div>
       </form>
     </div>
   </header>
+  <img src="images/pro-dev.png" class="img-fluid" alt="" style="position: absolute;
+    top: 0;">
   <main>
     <div class="container-fluid">
       <div class="howitworks-div">
@@ -134,12 +162,6 @@
           <div class="howitworkstext-div">
             <p class="howitworks-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris. Nunc ac arcu porta, ultricies felis vitae, euismod libero.</p>
           </div>
-        </div>
-        <div>
-          <img src="images/pro-two.png" class="img-fluid pro-two" alt="">
-        </div>
-        <div>
-          <img src="images/pro.png" class="img-fluid pro" alt="">
         </div>
         <div>
           <div id="developers-tab">
@@ -157,44 +179,45 @@
           </div>
           <div class="tab-content">
             <div id="fordevelopers-tab" class="container tab-pane active"><br>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
+              <div class="row" style="margin-top: 60px;">
+                <div class="col-lg-4 col-md-4">
                   <div>
-                    <img src="images/developer.png" class="img-fluid" alt="an image">
+                    <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
+                    <p class="developer-text">Signup with <br>Linkedin</p>
+                    <p class="developertext developertext-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <div>
-                        <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
-                        <p class="developer-text">Signup with <br>Linkedin</p>
-                        <p class="developertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div>
-                        <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
-                        <p class="developer-text">Connect your account with <br>Wakatime</p>
-                        <p class="developertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
-                      </div>
-                    </div>
+                <div class="col-lg-4 col-md-4">
+                  <div>
+                    <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
+                    <p class="developer-text">Connect your account with <br>Wakatime</p>
+                    <p class="developertext developertext-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <div>
-                        <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
-                        <p class="developer-text">Sync with your <br>IDE</p>
-                        <p class="developertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div>
-                        <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
-                        <p class="developer-text">Connect your account with <br>Wakatime</p>
-                        <p class="developertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div>
+                    <img src="images/howitworks.png" class="img-fluid" alt="an image" style="position: absolute; left: 55%;">
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 60px;">
+                <div class="col-lg-4 col-md-4">
+                  <div> 
+                    <img src="images/howitworks.png" class="img-fluid" alt="an image" style="position: absolute; right: 55%;">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div>
+                    <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
+                    <p class="developer-text">Sync with your <br>IDE</p>
+                    <p class="developertext developertext-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div>
+                    <img src="images/developer-icon.png" class="img-fluid" alt="an icon">
+                    <p class="developer-text">Connect your account with <br>Wakatime</p>
+                    <p class="developertext developertext-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
                   </div>
                 </div>
               </div>
@@ -213,19 +236,22 @@
       <div class="container-fluid" id="process-div">
         <div class="text-center">
           <h1 class="howitworks white">Our Process.</h1>
+          <p class="ourprocess-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
         </div>
         <div>
           <div class="row m-top">
             <div class="col-lg-4 col-md-4">
               <div class="process-box">
                 <p class="developer-text">Search</p>
+                <hr class="searchfor-line process-line">
                 <p class="developertext curated">Select for the kind of <br>developer/designer you are in need of.</p>
                 <img src="images/search.png" class="img-fluid process-icon" alt="icon">
               </div>
             </div>
             <div class="col-lg-4 col-md-4">
-              <div class="process-box">
+              <div class="process-box" style="margin-top: 40px;">
                 <p class="developer-text">Curated List</p>
+                <hr class="searchfor-line process-line">
                 <p class="developertext curated-list">View all available candidates, this candidates are filtered by who spends time coding the most per day.</p>
                 <img src="images/curated.png" class="img-fluid process-icon" alt="icon">
               </div>
@@ -233,6 +259,7 @@
             <div class="col-lg-4 col-md-4">
               <div class="process-box">
                 <p class="developer-text">Connect</p>
+                <hr class="searchfor-line process-line">
                 <p class="developertext curated">Reachout to the developer/designer and connect with them via linkedin or email.</p>
                 <img src="images/connect.png" class="img-fluid process-icon" alt="icon">
               </div>
@@ -242,6 +269,8 @@
       </div>
     </div>
     <div class="container-fluid">
+      <img src="images/pro-dev.png" class="img-fluid" alt="" style="position: absolute;
+    left: 0;">
       <div class="howitworks-div">
         <div class="text-center">
           <h1 class="howitworks">Our Why.</h1>
@@ -250,12 +279,6 @@
           </div>
           <div class="howitworkstext-div">
             <p class="howitworks-text">Also we noticed our talents can be a bit ignorant about their mental and physical health, we are here to help our talents fix that</p>
-          </div>
-          <div>
-            <img src="images/pro-two.png" class="img-fluid whypro-two" alt="">
-          </div>
-          <div>
-            <img src="images/pro.png" class="img-fluid pro" alt="">
           </div>
           <div style="margin: 0 auto;">
             <h3 class="companies">Companies we have worked with:</h3>

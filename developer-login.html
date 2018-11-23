@@ -17,6 +17,16 @@
   <!-- Argon CSS -->
   <link type="text/css" href="css/argon.css?v=1.0.1" rel="stylesheet">
   <link type="text/css" href="css/style.css" rel="stylesheet">
+  <style>
+    .login-tab {
+      /*top: 35px;*/
+    }
+    .signup.signin-linkedin {
+      margin-top: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,7 +35,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div>
-            <img src="images/signup.png" class="img-fluid" alt="">
+            <img src="images/clientsignup.png" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
@@ -34,15 +44,8 @@
               <a href="index.html"><img src="images/logo.png" class="img-fluid login-logo" alt="logo"> &nbsp;  <span class="text-divider">|</span></a>
               <span class="login-welcome">Exclusive access to top talent</span>
             </div>
-            <p class="applytojoin">Apply to Join our Network of Top Designers and Developers.</p>
+            <p class="applytojoin">Welcome back to Prodevs! Sign in using the same email address and password that you use on LinkedIn.com</p>
             <form>
-              <div class="form-group">
-                <label for="">Select Skill</label>
-                <select class="form-control" id="" placeholder="Level “e.g intermediate”">
-                  <option value="">I am a developer</option>
-                  <option value="">I am a designer</option>
-                </select> 
-              </div>
               <div class="form-group">
                 <label for="">Email Address</label>
                 <input type="email" class="form-control" id="" name="" placeholder=" e.g “janedoe@gmail.com”">
@@ -51,16 +54,27 @@
                 <label for="">Password</label>
                 <input type="password" class="form-control" id="" name="" placeholder="Enter a password not less than 8 characters...">
               </div>
-              <div class="form-group">
-                <label for="">Password Confirmation</label>
-                <input type="password" class="form-control" id="" name="" placeholder="Confirm password...">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="form-check text-left">
+                    <label class="form-check-label" style="font-weight: normal;">
+                      <input type="checkbox" class="form-check-input" name="" checked>Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="pull-right">
+                    <a href="" class="forgot-password">Forgot password?</a>
+                  </div>
+                </div>
               </div>
               <div>
-                <button class="btn btn-info btn-icon signup signin-linkedin"> Join Prodevs</button>
+                <button class="btn btn-info btn-icon signup signin-linkedin">SIGN IN</button>
               </div>
             </form>
             <a href="" class="form-close"><img src="images/close.png" class="img-fluid" alt=""></a>
-          </div>        
+          </div> 
+          <p class="notamember">No account? Join Prodevs as a <a class="join-now" href="signup.html">developer</a> or <a class="join-now" href="clients-signup.html">company</a></p>    
         </div>
       </div>
     </div>

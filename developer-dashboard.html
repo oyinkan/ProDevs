@@ -30,214 +30,424 @@
 <body>
   <div>
     <div class="container-fluid">
+      <div class="dashboard-nav">
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-6 col-6">
+            <div class="dashlogo-div">
+              <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                <div>
+                  <a href=""><img src="images/notification.png" class="img-fluid" alt=""></a>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9 col-12">
+                <div class="row" id="profilerow">
+                  <div class="col-lg-3 col-md-4 col-sm-3 col-6">
+                    <div>
+                      <img src="images/profile.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-sm-9 col-6">
+                    <div class="dropdown">
+                      <span class="dropdown-toggle profile-text white" data-toggle="dropdown" id="" aria-expanded="true">Jaykay S. &nbsp;&nbsp;<span class="caret"></span></span>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">&nbsp;Your Profile</a>
+                        <a class="dropdown-item" href="#">&nbsp;Email Us</a>
+                        <a class="dropdown-item" href="#">&nbsp;Sign Out</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-1 col-md-2 col-sm-2 col-3" style="padding-right: 0;">
           <div class="devdashboard-div">
-            <ul class="nav nav-tabs">
+            <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#selectenvironmet"><i class="fa fa-home"></i></a>
+                <a href="" class="nav-link" role="button"><img src="images/overview.png" class="img-fluid" alt=""></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href=""><i class="fa fa-upload"></i></a>
+                <a href="" class="nav-link" role="button"><img src="images/settings.png" class="img-fluid" alt=""></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href=""><i class="fa fa-cog"></i></a>
+                <a href="" class="nav-link" role="button"><img src="images/user.png" class="img-fluid" alt=""></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href=""><i class="fa fa-file"></i></a>
+                <a href="" class="nav-link" role="button"><img src="images/file.png" class="img-fluid" alt=""></a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-lg-11 col-md-10 col-sm-10 col-9" style="padding-left: 0; padding-right: 0;">
-          <div class="tab-content" style="background: #E5E5E5;">
-            <div class="dashboard-nav">
-              <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-6 col-6">
+          <div class="" style="background: rgba(117, 117, 117, 0.05);"> 
+            <div id="userprofile-tab">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#geninfo-tab">General Information</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#fordesigners-tab">Area of Expertise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#forclients-tab">Select IDE</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="geninfo-tab" class="container tab-pane active"><br>
                   <div>
-                    <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-12">
-                      <div>
-                        <a href=""><img src="images/notification.png" class="img-fluid" alt=""></a>
+                    <p class="howitworks">Profile</p>
+                    <p class="developertext" style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8">
+                        <div id="profilecreation-div">
+                          <form>
+                            <div class="row" style="margin-bottom: 15px;">
+                              <div class="col-lg-3 col-md-3">
+                                <div class="text-center">
+                                  <img src="images/profilepix.png" class="img-fluid" alt="">
+                                </div>
+                              </div>
+                              <div class="col-lg-7 col-md-7">
+                                <div class="form-group">
+                                  <input type="upload" class="form-control" name="">
+                                </div>
+                                <label style="font-weight: normal;">At least 256 x 256px PNG or JPG file.</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Fullname</label>
+                                  <input type="text" class="form-control" id="" name="" placeholder="Kayode Jaykay">
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Email address</label>
+                                  <input type="email" class="form-control" id="" name="" placeholder="jaykaykayode@gmail.com">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Select gender</label>
+                                  <select class="form-control" id="" placeholder="Level “e.g intermediate”">
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                  </select> 
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Location</label>
+                                  <input type="text" class="form-control" id="" name="" placeholder="e.g Lagos, Nigeria">
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="form-group">
+                                <label for="comment">Short Bio</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Phone Number</label>
+                                  <input type="phone" class="form-control" id="" name="" placeholder="+2341234567890">
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                  <label for="">Website URL</label>
+                                  <input type="url" class="form-control" id="" name="" placeholder="Enter url">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div>
+                                  <button class="btn btn-info btn-icon signup save-changes">SAVE CHANGES</button>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6">
+                                <div class="pull-right">
+                                  <p class="" style="padding-top: 10px;">Your Profile: <span class="join-now">prodev.com/kayodeJaykay</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-12">
-                      <div class="row" id="profilerow">
-                        <div class="col-lg-3 col-md-4 col-sm-3 col-6">
-                          <div>
-                            <img src="images/profile.png" class="img-fluid" alt="">
+                      <div class="col-lg-4 col-md-4">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <a href="">
+                              <div class="altlogin-div">
+                                <img src="images/linked-in.png" class="img-fluid" alt="">
+                                <p class="sync">Sync your LinkedIn</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <a href="">
+                              <div class="altlogin-div">
+                                <img src="images/waka-waka.png" class="img-fluid" alt="">
+                                <p class="sync">Sync your Wakatime</p>
+                              </div>
+                            </a>
                           </div>
                         </div>
-                        <div class="col-lg-9 col-md-8 col-sm-9 col-6">
-                          <div>
-                            <p class="profile-text">Jaykay S.</p>
-                          </div>
+                        <div class="pull-right">
+                          <a href=""><img src="images/chat.png" class="img-fluid chatapp" alt=""></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div>
-              <div class="row" style="margin-right: 0;">
-                <div class="col-lg-7 col-md-8">
-                  <div class="apikey">
+                <div id="fordesigners-tab" class="container tab-pane fade"><br>
+                  <div>
+                    <p class="howitworks">Skills</p>
+                    <p class="developertext" style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris risus, fermentum et arcu vel, congue egestas mauris.</p>
                     <div class="row">
-                      <div class="col-lg-9 col-md-8 col-sm-9">
-                        <p>YOUR API KEYS</p>
-                        <p class="apikey-digit">FLWPUBK-982d7d485b17</p>
+                      <div class="col-lg-8 col-md-8">
+                        <div id="profilecreation-div">
+                          <form>
+                            <div class="row">
+                              <div class="col-lg-3 col-md-3">
+                                <div class="addskills-div">
+                                  <p>Add your skills</p>
+                                </div>
+                              </div>
+                              <div class="col-lg-7 col-md-7">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="" placeholder="Type your skill here...">
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-md-2">
+                                <button class="btn btn-info btn-icon signup addnewskill-btn">+</button>
+                              </div>
+                            </div>
+                            <div class="newskills-div">
+                              <button type="button" class="btn btn-primary newskill">
+                                HTML <span class="badge badge-light">x</span>
+                              </button>
+                              <button type="button" class="btn btn-primary newskill">
+                                CSS <span class="badge badge-light">x</span>
+                              </button>
+                              <button type="button" class="btn btn-primary newskill">
+                                Ruby <span class="badge badge-light">x</span>
+                              </button>
+                              <button type="button" class="btn btn-primary newskill">
+                                React <span class="badge badge-light">x</span>
+                              </button>
+                            </div>  
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                <div style="margin-top: 30px;">
+                                  <button class="btn btn-info btn-icon signup save-changes">SAVE CHANGES</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                      <div class="col-lg-3 col-md-4 col-sm-3">
-                        <button class="btn btn-info btn-icon" id="apikey-copy"><i class="fa fa-file"></i> &nbsp&nbspCopy</button>
+                      <div class="col-lg-4 col-md-4">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <a href="">
+                              <div class="altlogin-div">
+                                <img src="images/linked-in.png" class="img-fluid" alt="">
+                                <p class="sync">Sync your LinkedIn</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <a href="">
+                              <div class="altlogin-div">
+                                <img src="images/waka-waka.png" class="img-fluid" alt="">
+                                <p class="sync">Sync your Wakatime</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="pull-right">
+                          <a href=""><img src="images/chat.png" class="img-fluid chatapp" alt=""></a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div id="selectenvironment" class="container tab-pane active"><br>
-              <div class="select-div">
-                <p class="select-env">Select your design or code enviroment</p>
-                <div class="row">
-                  <div class="col-lg-10 col-md-12">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/visual.png" class="img-fluid" alt="">
-                            <p class="environment-text">Visual Studio <br>Code</p>
+                <div id="forclients-tab" class="container tab-pane fade"><br>
+                  <div>
+                    <div class="row" style="margin-right: 0;">
+                      <div class="col-lg-9 col-md-9">
+                        <div class="apikey">
+                          <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-9">
+                              <p>YOUR API KEYS</p>
+                              <p class="apikey-digit">PRDEVSPUBK-982d7d485b175f8360dddd663931683b-X</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3">
+                              <button class="btn btn-info btn-icon" id="apikey-copy"><i class="fa fa-file"></i> &nbsp&nbspCopy</button>
+                            </div>
                           </div>
-                        </a>
+                        </div>
+                        <div id="selectenvironment">
+                          <div class="select-div">
+                            <p class="select-env">Select your design or code enviroment</p>
+                            <div>
+                              <div class="row">
+                                  <div>
+                                    <a href="">
+                                      <div class="environment-box">
+                                        <img src="images/visual.png" class="img-fluid" alt="">
+                                        <p class="environment-text">Visual<br> Studio Code</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="">
+                                      <div class="environment-box">
+                                        <img src="images/atom.png" class="img-fluid" alt="">
+                                        <p class="environment-text">Atom<br> Text Editor</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="">
+                                      <div class="environment-box">
+                                        <img src="images/webstorm.png" class="img-fluid" alt="">
+                                        <p class="environment-text">Web Storm <br>IDE</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="">
+                                      <div class="environment-box">
+                                        <img src="images/sublime.png" class="img-fluid" alt="">
+                                        <p class="environment-text">Sublime<br> Text Editor</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div>
+                                    <a href="">
+                                      <div class="environment-box">
+                                        <img src="images/intellij.png" class="img-fluid" alt="">
+                                        <p class="environment-text">IntelliJ <br>IDEA CE</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/bracket.png" class="img-fluid" alt="">
+                                      <p class="environment-text">Bracket<br> Text Editor</p>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/netbean.png" class="img-fluid" alt="">
+                                      <p class="environment-text">Netbeans <br>IDE</p>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/eclipse.png" class="img-fluid" alt="">
+                                      <p class="environment-text">Eclipse <br>IDE</p>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/android.png" class="img-fluid" alt="">
+                                      <p class="environment-text">Android<br> Studio IDE</p>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/phpstorm.png" class="img-fluid" alt="">
+                                      <p class="environment-text">PHP<br> Storm IDE</p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/sketch.png" class="img-fluid" alt="">
+                                      <p class="environment-text" style="padding-bottom: 25px;">Sketch</p>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="">
+                                    <div class="environment-box">
+                                      <img src="images/pycharm.png" class="img-fluid" alt="">
+                                      <p class="environment-text">Pycharm <br>IDE</p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="devdashboard-line">
+                            <div class="row" style="clear: left;">
+                              <div class="col-lg-9 col-md-8">
+                                <p class="need-help">Need help?</p>
+                                <p class="developertext">We are always happy to help with any issues you have. Search the documentation. <br>Contact Support. You can also chat with other developers on our slack channel.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
                       </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/atom.png" class="img-fluid" alt="">
-                            <p class="environment-text">Atom Text <br>Editor</p>
+                      <div class="col-lg-3 col-md-3">
+                        <div id="selectedides-div">
+                          <div class="card">
+                            <div class="card-header">Selected IDE’s</div>
+                            <div class="card-body">
+                              <div>
+                                <button type="button" class="btn btn-primary newskill">
+                                  <img src="images/vselected.png" class="img-fluid" alt=""><span class="badge badge-light">x</span>
+                                </button>
+                                <button type="button" class="btn btn-primary newskill">
+                                  <img src="images/wselected.png" class="img-fluid" alt=""><span class="badge badge-light">x</span>
+                                </button>
+                                <button type="button" class="btn btn-primary newskill">
+                                  <img src="images/sselected.png" class="img-fluid" alt=""><span class="badge badge-light">x</span>
+                                </button>
+                              </div>
+                            </div> 
+                            <div class="card-footer"></div>
                           </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/webstorm.png" class="img-fluid" alt="">
-                            <p class="environment-text">Web Storm <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/sublime.png" class="img-fluid" alt="">
-                            <p class="environment-text">Sublime Text <br>Editor</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/intellij.png" class="img-fluid" alt="">
-                            <p class="environment-text">IntelliJ <br>IDEA CE</p>
-                          </div>
-                        </a>
+                        </div>
+                        <div class="pull-right">
+                          <a href=""><img src="images/chat.png" class="img-fluid chatapp" alt="" style="left: inherit;"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-10 col-md-12">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/bracket.png" class="img-fluid" alt="">
-                            <p class="environment-text">Bracket Text <br>Editor</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/netbean.png" class="img-fluid" alt="">
-                            <p class="environment-text">Netbeans <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/eclipse.png" class="img-fluid" alt="">
-                            <p class="environment-text">Eclipse <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/android.png" class="img-fluid" alt="">
-                            <p class="environment-text">Android Studio <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/phpstorm.png" class="img-fluid" alt="">
-                            <p class="environment-text">PHP Storm <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-10 col-md-12">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/sketch.png" class="img-fluid" alt="">
-                            <p class="environment-text" style="padding-bottom: 25px;">Sketch</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-md-2 col-sm-4">
-                        <a href="">
-                          <div class="environment-box">
-                            <img src="images/pycharm.png" class="img-fluid" alt="">
-                            <p class="environment-text">Pycharm <br>IDE</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr class="devdashboard-line">
-                <div class="row" style="clear: left;">
-                  <div class="col-lg-7 col-md-7">
-                    <p class="need-help">Need help?</p>
-                    <p class="developertext">We are always happy to help with any issues you have. Search the documentation. Contact Support. You can also chat with other developers on our slack channel.</p>
-                  </div>
-                </div>
-                <div class="pull-right">
-                  <a href=""><img src="images/chat.png" class="img-fluid" alt=""></a>
-                </div>
-                <div style="clear: right;">
-                  
-                </div>
-              </div>
-            </div>
-            <div id="" class="container tab-pane fade"><br>
-            </div>
-            <div id="" class="container tab-pane fade"><br>
-            </div>
-            <div id="" class="container tab-pane fade"><br>
-            </div>
+              </div> 
+            </div>    
           </div>
         </div>
       </div>

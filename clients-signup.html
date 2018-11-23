@@ -17,6 +17,24 @@
   <!-- Argon CSS -->
   <link type="text/css" href="css/argon.css?v=1.0.1" rel="stylesheet">
   <link type="text/css" href="css/style.css" rel="stylesheet">
+  <style>
+    .login-tab label {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 14px;
+      color: #000;
+    }
+    input[type="checkbox"]::after, 
+    input[type="checkbox"]::before {
+      background: #fff!important;
+    }
+    .login-tab {
+      top: 35px;
+    }
+    .login-tab label {
+      font-weight: normal;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,7 +43,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div>
-            <img src="images/signup.png" class="img-fluid" alt="">
+            <img src="images/clientsignup.png" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
@@ -34,29 +52,23 @@
               <a href="index.html"><img src="images/logo.png" class="img-fluid login-logo" alt="logo"> &nbsp;  <span class="text-divider">|</span></a>
               <span class="login-welcome">Exclusive access to top talent</span>
             </div>
-            <p class="applytojoin">Apply to Join our Network of Top Designers and Developers.</p>
+            <p class="applytojoin">Work with the World's Top Talent,<br> On Demand</p>
             <form>
               <div class="form-group">
-                <label for="">Select Skill</label>
-                <select class="form-control" id="" placeholder="Level “e.g intermediate”">
-                  <option value="">I am a developer</option>
-                  <option value="">I am a designer</option>
-                </select> 
-              </div>
-              <div class="form-group">
-                <label for="">Email Address</label>
-                <input type="email" class="form-control" id="" name="" placeholder=" e.g “janedoe@gmail.com”">
-              </div>
-              <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" class="form-control" id="" name="" placeholder="Enter a password not less than 8 characters...">
-              </div>
-              <div class="form-group">
-                <label for="">Password Confirmation</label>
-                <input type="password" class="form-control" id="" name="" placeholder="Confirm password...">
+                <label for="">Select talents you would love to discover:</label>
+                <div class="form-check" style="margin-bottom: 30px; margin-top: 10px;">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">&emsp;<img src="images/designer.png" class="img-fluid form-check-image" alt="icon">&emsp;Designers
+                  </label>
+                </div>
+                <div class="form-check" style="margin-bottom: 30px;">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">&emsp;<img src="images/developers.png" class="img-fluid form-check-image" alt="icon">&emsp;Developers
+                  </label>
+                </div>
               </div>
               <div>
-                <button class="btn btn-info btn-icon signup signin-linkedin"> Join Prodevs</button>
+                <button class="btn btn-info btn-icon signup next">Next</button>
               </div>
             </form>
             <a href="" class="form-close"><img src="images/close.png" class="img-fluid" alt=""></a>
